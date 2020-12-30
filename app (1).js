@@ -34,11 +34,11 @@ class BasicCharacterController {
 
     this._LoadModels();
   }
-  //Jolleen model
+  //Demon model
   _LoadModels() {
     const loader = new FBXLoader();
     loader.setPath('./resources/zombie/');
-    loader.load('jolleen.fbx', (fbx) => { //character model in this line
+    loader.load('demon.fbx', (fbx) => { //character model in this line
       fbx.scale.setScalar(0.15);
       fbx.traverse(c => {
         c.castShadow = true;
@@ -63,12 +63,12 @@ class BasicCharacterController {
           action: action,
         };
       };
-      //Jolleen animation
+      //Breakdancing animation
       const loader = new FBXLoader(this._manager);
       loader.setPath('./resources/zombie/');
-      loader.load('jolleenwalk.fbx', (a) => { _OnLoad('walk', a); }); //walk animation here
-      loader.load('jolleenidle.fbx', (a) => { _OnLoad('idle', a); }); //idle or standstill animation here
-      loader.load('Salsa_Dancing.fbx', (a) => { _OnLoad('animation', a); }); //change animations (dance and etc. here)
+      loader.load('demonnwalk.fbx', (a) => { _OnLoad('walk', a); }); //walk animation here
+      loader.load('demonidle.fbx', (a) => { _OnLoad('idle', a); }); //idle or standstill animation here
+      loader.load('demonbreakdance.fbx', (a) => { _OnLoad('animation', a); }); //change animations (dance and etc. here)
     });
   }
 

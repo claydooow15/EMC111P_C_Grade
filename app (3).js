@@ -34,12 +34,12 @@ class BasicCharacterController {
 
     this._LoadModels();
   }
-  //Jolleen model
+  //Demon model
   _LoadModels() {
     const loader = new FBXLoader();
     loader.setPath('./resources/zombie/');
     loader.load('jolleen.fbx', (fbx) => { //character model in this line
-      fbx.scale.setScalar(0.15);
+      fbx.scale.setScalar(0.1);
       fbx.traverse(c => {
         c.castShadow = true;
       });
@@ -63,12 +63,12 @@ class BasicCharacterController {
           action: action,
         };
       };
-      //Jolleen animation
+      //Demon thinking animation
       const loader = new FBXLoader(this._manager);
       loader.setPath('./resources/zombie/');
-      loader.load('jolleenwalk.fbx', (a) => { _OnLoad('walk', a); }); //walk animation here
-      loader.load('jolleenidle.fbx', (a) => { _OnLoad('idle', a); }); //idle or standstill animation here
-      loader.load('Salsa_Dancing.fbx', (a) => { _OnLoad('animation', a); }); //change animations (dance and etc. here)
+      loader.load('demonwalk.fbx', (a) => { _OnLoad('walk', a); }); //walk animation here
+      loader.load('demonidle.fbx', (a) => { _OnLoad('idle', a); }); //idle or standstill animation here
+      loader.load('demonthinking.fbx', (a) => { _OnLoad('animation', a); }); //change animations (dance and etc. here)
     });
   }
 
@@ -432,6 +432,22 @@ class CharacterControllerDemo {
 //start here for new sprites((1))
 
 
+///Static Character Add-on/////////
+
+const loader1 = new FBXLoader();
+    loader1.setPath('./resources/zombie/');
+    loader1.load('demon.fbx', (fbx) => {
+      fbx.scale.setScalar(0.14);
+      fbx.traverse(c => {
+        c.castShadow = true;
+      });
+
+      this._target1 = fbx;
+      this._scene.add(this._target1);
+      this._target1.position.x=-80
+      this._target1.position.y=1.8
+      this._target1.position.z=90
+    });
 /////////////////////BUILDINGS//////////////////////
 
 ///Building A - 1///
