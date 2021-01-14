@@ -1114,82 +1114,82 @@ top23Mesh.position.z = 100
 //Pig 1 (Mid)//
 //Body//
 let pigbody1Geometry = new THREE.SphereGeometry(9, 20, 20);
-let pigbody1Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide});
+let pigbody1Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide});
 let pigbody1Mesh = new THREE.Mesh(pigbody1Geometry, pigbody1Material);
 this._scene.add(pigbody1Mesh);
 
 
-pigbody1Mesh.position.x=0
+pigbody1Mesh.position.x=18
 pigbody1Mesh.position.y=10
 pigbody1Mesh.position.z=120
 //Leg Back Right//
 let piglbr1Geometry = new THREE.CylinderGeometry(1,1,5,32);
-let piglbr1Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide} );
+let piglbr1Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide} );
 let piglbr1Mesh = new THREE.Mesh(piglbr1Geometry, piglbr1Material);
 this._scene.add(piglbr1Mesh);
-piglbr1Mesh.position.x = 3
+piglbr1Mesh.position.x = 21
 piglbr1Mesh.position.y = 2
 piglbr1Mesh.position.z = 125
 //Leg Back Left//
 let piglbl1Geometry = new THREE.CylinderGeometry(1,1,5,32);
-let piglbl1Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide} );
+let piglbl1Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide} );
 let piglbl1Mesh = new THREE.Mesh(piglbl1Geometry, piglbl1Material);
 this._scene.add(piglbl1Mesh);
-piglbl1Mesh.position.x = -3
+piglbl1Mesh.position.x = 16
 piglbl1Mesh.position.y = 2
 piglbl1Mesh.position.z = 125
 //Leg Front Left//
 let piglfl1Geometry = new THREE.CylinderGeometry(1,1,5,32);
-let piglfl1Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide} );
+let piglfl1Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide} );
 let piglfl1Mesh = new THREE.Mesh(piglfl1Geometry, piglfl1Material);
 this._scene.add(piglfl1Mesh);
-piglfl1Mesh.position.x = -3
+piglfl1Mesh.position.x = 16
 piglfl1Mesh.position.y = 2
 piglfl1Mesh.position.z = 115
 //Leg Front Right//
 let piglfr1Geometry = new THREE.CylinderGeometry(1,1,5,32);
-let piglfr1Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide} );
+let piglfr1Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide} );
 let piglfr1Mesh = new THREE.Mesh(piglfr1Geometry, piglfr1Material);
 this._scene.add(piglfr1Mesh);
-piglfr1Mesh.position.x = 3
+piglfr1Mesh.position.x = 21
 piglfr1Mesh.position.y = 2
 piglfr1Mesh.position.z = 115
 //Head//
 let pighead1Geometry = new THREE.SphereGeometry(4, 20, 20);
-let pighead1Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide});
+let pighead1Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide});
 let pighead1Mesh = new THREE.Mesh(pighead1Geometry, pighead1Material);
 this._scene.add(pighead1Mesh);
 
-pighead1Mesh.position.x = 0
+pighead1Mesh.position.x = 18
 pighead1Mesh.position.y = 10
-pighead1Mesh.position.z = 107
+pighead1Mesh.position.z = 109
 //Nose//
 let pignose1Geometry = new THREE.SphereGeometry(1, 20, 20);
-let pignose1Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide});
+let pignose1Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide});
 let pignose1Mesh = new THREE.Mesh(pignose1Geometry, pignose1Material);
 this._scene.add(pignose1Mesh);
 
-pignose1Mesh.position.x = 0
+pignose1Mesh.position.x = 18
 pignose1Mesh.position.y = 10
-pignose1Mesh.position.z = 103
+pignose1Mesh.position.z = 105
 //Eyes Left//
 let pigeyesl1Geometry = new THREE.SphereGeometry(0.5, 20, 20);
 let pigeyesl1Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/backgroundTexture.jpg'), side: THREE.DoubleSide});
 let pigeyesl1Mesh = new THREE.Mesh(pigeyesl1Geometry, pigeyesl1Material);
 this._scene.add(pigeyesl1Mesh);
 
-pigeyesl1Mesh.position.x = -2
+pigeyesl1Mesh.position.x = 16
 pigeyesl1Mesh.position.y = 12
-pigeyesl1Mesh.position.z = 104
+pigeyesl1Mesh.position.z = 106
 //Eyes Right//
 let pigeyesr1Geometry = new THREE.SphereGeometry(0.5, 20, 20);
 let pigeyesr1Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/backgroundTexture.jpg'), side: THREE.DoubleSide});
 let pigeyesr1Mesh = new THREE.Mesh(pigeyesr1Geometry, pigeyesr1Material);
 this._scene.add(pigeyesr1Mesh);
 
-pigeyesr1Mesh.position.x = 2
+pigeyesr1Mesh.position.x = 20
 pigeyesr1Mesh.position.y = 12
-pigeyesr1Mesh.position.z = 104
+pigeyesr1Mesh.position.z = 106
 //Mouth//
 let pigmouth1Geometry = new THREE.BoxBufferGeometry(2,0.5,1)
 let pigmouth1Texture =
@@ -1204,96 +1204,97 @@ let pigmouth1Texture =
 let pigmouth1Materials = new THREE.MeshFaceMaterial(pigmouth1Texture);
 let pigmouth1Cube = new THREE.Mesh(pigmouth1Geometry, pigmouth1Materials);
 this._scene.add(pigmouth1Cube);
-pigmouth1Cube.position.x=0
+pigmouth1Cube.position.x=18
 pigmouth1Cube.position.y=8
-pigmouth1Cube.position.z=104
+pigmouth1Cube.position.z=105.5
 
 //Pig 2 (Left)//
 //Body//
-let pigbody2Geometry = new THREE.BoxBufferGeometry(10,10,20)
+let pigbody2Geometry = new THREE.SphereGeometry(9,20,20)
 let pigbody2Texture =
 [
-  new THREE.MeshBasicMaterial ({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide}),
-  new THREE.MeshBasicMaterial ({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide}),
-  new THREE.MeshBasicMaterial ({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide}),
-  new THREE.MeshBasicMaterial ({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide}),
-  new THREE.MeshBasicMaterial ({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide}),
-  new THREE.MeshBasicMaterial ({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide})
+  new THREE.MeshBasicMaterial ({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide}),
+  new THREE.MeshBasicMaterial ({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide}),
+  new THREE.MeshBasicMaterial ({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide}),
+  new THREE.MeshBasicMaterial ({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide}),
+  new THREE.MeshBasicMaterial ({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide}),
+  new THREE.MeshBasicMaterial ({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide})
 ];
 let pigbody2Materials = new THREE.MeshFaceMaterial(pigbody2Texture);
 let pigbody2Cube = new THREE.Mesh(pigbody2Geometry, pigbody2Materials);
 this._scene.add(pigbody2Cube);
-pigbody2Cube.position.x=140
+pigbody2Cube.position.x=130
 pigbody2Cube.position.y=9
 pigbody2Cube.position.z=120
 //Leg Back Right//
 let piglbr2Geometry = new THREE.CylinderGeometry(1,1,5,32);
-let piglbr2Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide} );
+let piglbr2Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide} );
 let piglbr2Mesh = new THREE.Mesh(piglbr2Geometry, piglbr2Material);
 this._scene.add(piglbr2Mesh);
-piglbr2Mesh.position.x = 143
+piglbr2Mesh.position.x = 128
 piglbr2Mesh.position.y = 2
-piglbr2Mesh.position.z = 128
+piglbr2Mesh.position.z = 126
 //Leg Back Left//
 let piglbl2Geometry = new THREE.CylinderGeometry(1,1,5,32);
-let piglbl2Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide} );
+let piglbl2Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide} );
 let piglbl2Mesh = new THREE.Mesh(piglbl2Geometry, piglbl2Material);
 this._scene.add(piglbl2Mesh);
-piglbl2Mesh.position.x = 137
+piglbl2Mesh.position.x = 132
 piglbl2Mesh.position.y = 2
-piglbl2Mesh.position.z = 128
+piglbl2Mesh.position.z = 126
 //Leg Front Left//
 let piglfl2Geometry = new THREE.CylinderGeometry(1,1,5,32);
-let piglfl2Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide} );
+let piglfl2Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide} );
 let piglfl2Mesh = new THREE.Mesh(piglfl2Geometry, piglfl2Material);
 this._scene.add(piglfl2Mesh);
-piglfl2Mesh.position.x = 137
+piglfl2Mesh.position.x = 128
 piglfl2Mesh.position.y = 2
 piglfl2Mesh.position.z = 115
 //Leg Front Right//
 let piglfr2Geometry = new THREE.CylinderGeometry(1,1,5,32);
-let piglfr2Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide} );
+let piglfr2Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide} );
 let piglfr2Mesh = new THREE.Mesh(piglfr2Geometry, piglfr2Material);
 this._scene.add(piglfr2Mesh);
-piglfr2Mesh.position.x = 143
+piglfr2Mesh.position.x = 133
 piglfr2Mesh.position.y = 2
 piglfr2Mesh.position.z = 115
 //Head//
 let pighead2Geometry = new THREE.SphereGeometry(4, 20, 20);
-let pighead2Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide});
+let pighead2Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide});
 let pighead2Mesh = new THREE.Mesh(pighead2Geometry, pighead2Material);
 this._scene.add(pighead2Mesh);
 
-pighead2Mesh.position.x = 140
+pighead2Mesh.position.x = 130
 pighead2Mesh.position.y = 10
-pighead2Mesh.position.z = 107
+pighead2Mesh.position.z = 110
 //Nose//
 let pignose2Geometry = new THREE.SphereGeometry(1, 20, 20);
-let pignose2Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide});
+let pignose2Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide});
 let pignose2Mesh = new THREE.Mesh(pignose2Geometry, pignose2Material);
 this._scene.add(pignose2Mesh);
 
-pignose2Mesh.position.x = 140
+pignose2Mesh.position.x = 130
 pignose2Mesh.position.y = 10
-pignose2Mesh.position.z = 103
+pignose2Mesh.position.z = 106 
 //Eyes Left//
 let pigeyesl2Geometry = new THREE.SphereGeometry(0.5, 20, 20);
 let pigeyesl2Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/backgroundTexture.jpg'), side: THREE.DoubleSide});
 let pigeyesl2Mesh = new THREE.Mesh(pigeyesl2Geometry, pigeyesl2Material);
 this._scene.add(pigeyesl2Mesh);
 
-pigeyesl2Mesh.position.x = 138
+pigeyesl2Mesh.position.x = 128
 pigeyesl2Mesh.position.y = 12
-pigeyesl2Mesh.position.z = 104
+pigeyesl2Mesh.position.z = 107
 //Eyes Right//
 let pigeyesr2Geometry = new THREE.SphereGeometry(0.5, 20, 20);
 let pigeyesr2Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/backgroundTexture.jpg'), side: THREE.DoubleSide});
 let pigeyesr2Mesh = new THREE.Mesh(pigeyesr2Geometry, pigeyesr2Material);
 this._scene.add(pigeyesr2Mesh);
 
-pigeyesr2Mesh.position.x = 142
+pigeyesr2Mesh.position.x = 132
 pigeyesr2Mesh.position.y = 12
-pigeyesr2Mesh.position.z = 104
+pigeyesr2Mesh.position.z = 107
+
 //Mouth/
 let pigmouth2Geometry = new THREE.BoxBufferGeometry(2,0.5,1)
 let pigmouth2Texture =
@@ -1308,97 +1309,99 @@ let pigmouth2Texture =
 let pigmouth2Materials = new THREE.MeshFaceMaterial(pigmouth2Texture);
 let pigmouth2Cube = new THREE.Mesh(pigmouth2Geometry, pigmouth2Materials);
 this._scene.add(pigmouth2Cube);
-pigmouth2Cube.position.x=140
+
+pigmouth2Cube.position.x=130
 pigmouth2Cube.position.y=8
-pigmouth2Cube.position.z=104
+pigmouth2Cube.position.z=107
 
 
 //Pig 3 (Right)//
 //Body//
-let pigbody3Geometry = new THREE.BoxBufferGeometry(10,10,20)
+let pigbody3Geometry = new THREE.SphereGeometry(9,20,20)
 let pigbody3Texture =
 [
-  new THREE.MeshBasicMaterial ({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide}),
-  new THREE.MeshBasicMaterial ({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide}),
-  new THREE.MeshBasicMaterial ({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide}),
-  new THREE.MeshBasicMaterial ({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide}),
-  new THREE.MeshBasicMaterial ({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide}),
-  new THREE.MeshBasicMaterial ({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide})
+  new THREE.MeshBasicMaterial ({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide}),
+  new THREE.MeshBasicMaterial ({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide}),
+  new THREE.MeshBasicMaterial ({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide}),
+  new THREE.MeshBasicMaterial ({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide}),
+  new THREE.MeshBasicMaterial ({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide}),
+  new THREE.MeshBasicMaterial ({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide})
 ];
-let pigbody3Materials = new THREE.MeshFaceMaterial(pigbody3Texture);
-let pigbody3Cube = new THREE.Mesh(pigbody3Geometry, pigbody3Materials);
+let pigbody3Materials = new THREE.MeshFaceMaterial(pigbody2Texture);
+let pigbody3Cube = new THREE.Mesh(pigbody2Geometry, pigbody2Materials);
 this._scene.add(pigbody3Cube);
-pigbody3Cube.position.x=-100
+pigbody3Cube.position.x=-90
 pigbody3Cube.position.y=9
 pigbody3Cube.position.z=120
+
 //Leg Back Right//
 let piglbr3Geometry = new THREE.CylinderGeometry(1,1,5,32);
-let piglbr3Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide} );
+let piglbr3Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide} );
 let piglbr3Mesh = new THREE.Mesh(piglbr3Geometry, piglbr3Material);
 this._scene.add(piglbr3Mesh);
-piglbr3Mesh.position.x = -103
+piglbr3Mesh.position.x = -91
 piglbr3Mesh.position.y = 2
-piglbr3Mesh.position.z = 128
+piglbr3Mesh.position.z = 125
 //Leg Back Left//
 let piglbl3Geometry = new THREE.CylinderGeometry(1,1,5,32);
-let piglbl3Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide} );
+let piglbl3Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide} );
 let piglbl3Mesh = new THREE.Mesh(piglbl3Geometry, piglbl3Material);
 this._scene.add(piglbl3Mesh);
-piglbl3Mesh.position.x = -97
+piglbl3Mesh.position.x = -87
 piglbl3Mesh.position.y = 2
-piglbl3Mesh.position.z = 128
+piglbl3Mesh.position.z = 125
 //Leg Front Left//
 let piglfl3Geometry = new THREE.CylinderGeometry(1,1,5,32);
-let piglfl3Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide} );
+let piglfl3Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide} );
 let piglfl3Mesh = new THREE.Mesh(piglfl3Geometry, piglfl3Material);
 this._scene.add(piglfl3Mesh);
-piglfl3Mesh.position.x = -103
+piglfl3Mesh.position.x = -87
 piglfl3Mesh.position.y = 2
 piglfl3Mesh.position.z = 115
 //Leg Front Right//
 let piglfr3Geometry = new THREE.CylinderGeometry(1,1,5,32);
-let piglfr3Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide} );
+let piglfr3Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide} );
 let piglfr3Mesh = new THREE.Mesh(piglfr3Geometry, piglfr3Material);
 this._scene.add(piglfr3Mesh);
-piglfr3Mesh.position.x = -97
+piglfr3Mesh.position.x = -93
 piglfr3Mesh.position.y = 2
 piglfr3Mesh.position.z = 115
 //Head//
 let pighead3Geometry = new THREE.SphereGeometry(4, 20, 20);
-let pighead3Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide});
+let pighead3Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide});
 let pighead3Mesh = new THREE.Mesh(pighead3Geometry, pighead3Material);
 this._scene.add(pighead3Mesh);
 
-pighead3Mesh.position.x = -100
+pighead3Mesh.position.x = -90
 pighead3Mesh.position.y = 10
-pighead3Mesh.position.z = 107
+pighead3Mesh.position.z = 109
 //Nose//
 let pignose3Geometry = new THREE.SphereGeometry(1, 20, 20);
-let pignose3Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pigBody_Texture.jpg'), side: THREE.DoubleSide});
+let pignose3Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/pinkPig.jpg'), side: THREE.DoubleSide});
 let pignose3Mesh = new THREE.Mesh(pignose3Geometry, pignose3Material);
 this._scene.add(pignose3Mesh);
 
-pignose3Mesh.position.x = -100
+pignose3Mesh.position.x = -90
 pignose3Mesh.position.y = 10
-pignose3Mesh.position.z = 103
+pignose3Mesh.position.z = 105
 //Eyes Left//
 let pigeyesl3Geometry = new THREE.SphereGeometry(0.5, 20, 20);
 let pigeyesl3Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/backgroundTexture.jpg'), side: THREE.DoubleSide});
 let pigeyesl3Mesh = new THREE.Mesh(pigeyesl3Geometry, pigeyesl3Material);
 this._scene.add(pigeyesl3Mesh);
 
-pigeyesl3Mesh.position.x = -102
+pigeyesl3Mesh.position.x = -92
 pigeyesl3Mesh.position.y = 12
-pigeyesl3Mesh.position.z = 104
+pigeyesl3Mesh.position.z = 106
 //Eyes Right//
 let pigeyesr3Geometry = new THREE.SphereGeometry(0.5, 20, 20);
 let pigeyesr3Material = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/backgroundTexture.jpg'), side: THREE.DoubleSide});
 let pigeyesr3Mesh = new THREE.Mesh(pigeyesr3Geometry, pigeyesr3Material);
 this._scene.add(pigeyesr3Mesh);
 
-pigeyesr3Mesh.position.x = -98
+pigeyesr3Mesh.position.x = -88
 pigeyesr3Mesh.position.y = 12
-pigeyesr3Mesh.position.z = 104
+pigeyesr3Mesh.position.z = 106
 //Mouth/
 let pigmouth3Geometry = new THREE.BoxBufferGeometry(2,0.5,1)
 let pigmouth3Texture =
@@ -1413,9 +1416,14 @@ let pigmouth3Texture =
 let pigmouth3Materials = new THREE.MeshFaceMaterial(pigmouth3Texture);
 let pigmouth3Cube = new THREE.Mesh(pigmouth3Geometry, pigmouth3Materials);
 this._scene.add(pigmouth3Cube);
-pigmouth3Cube.position.x=-100
+pigmouth3Cube.position.x=-90
 pigmouth3Cube.position.y=8
-pigmouth3Cube.position.z=104
+pigmouth3Cube.position.z=105.5
+
+//Big Pot inside 3rd pig's house
+
+//Chimney on 3rd house
+
 
 //end here((1))
 
