@@ -699,20 +699,49 @@ bhousedoor1Cube.position.y=10
 bhousedoor1Cube.position.z=170
 //first window //
 let bfirstwindow1Geometry = new THREE.BoxBufferGeometry(10,20,5)
-let bfirstwindow1Materials = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/roadTexture.jpg'), side: THREE.DoubleSide});
+let bfirstwindow1Materials = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/window1.jpg'), side: THREE.DoubleSide});
 let bfirstwindow1Cube = new THREE.Mesh(bfirstwindow1Geometry, bfirstwindow1Materials);
 this._scene.add(bfirstwindow1Cube);
 bfirstwindow1Cube.position.x=-110
 bfirstwindow1Cube.position.y=20
 bfirstwindow1Cube.position.z=170
+
 //second window//
 let bsecondwindow1Geometry = new THREE.BoxBufferGeometry(10,20,5)
-let bsecondwindow1Materials = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/roadTexture.jpg'), side: THREE.DoubleSide});
+let bsecondwindow1Materials = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/window1.jpg'), side: THREE.DoubleSide});
 let bsecondwindow1Cube = new THREE.Mesh(bsecondwindow1Geometry, bsecondwindow1Materials);
 this._scene.add(bsecondwindow1Cube);
 bsecondwindow1Cube.position.x=-70
 bsecondwindow1Cube.position.y=20
 bsecondwindow1Cube.position.z=170
+
+//Chimney
+let bsecondChimneyGeometry = new THREE.BoxBufferGeometry(28,35,8)
+let bsecondChimneyMaterials = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/house1Texture.jpg'), side: THREE.DoubleSide});
+let bsecondChimneyCube = new THREE.Mesh(bsecondChimneyGeometry, bsecondChimneyMaterials);
+this._scene.add(bsecondChimneyCube);
+bsecondChimneyCube.position.x=-90
+bsecondChimneyCube.position.y=40
+bsecondChimneyCube.position.z=225
+
+//Pot
+let potGeometry = new THREE.SphereGeometry(9,20,20)
+let potMaterials = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/backgroundTexture.jpg'), side: THREE.DoubleSide});
+let potSphere = new THREE.Mesh(potGeometry, potMaterials);
+this._scene.add(potSphere);
+potSphere.position.x=-90
+potSphere.position.y=8
+potSphere.position.z=225
+
+
+//pot lid
+let potLidGeometry = new THREE.BoxBufferGeometry(13,2,8)
+let potLidMaterials = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/backgroundTexture.jpg'), side: THREE.DoubleSide});
+let potLidCube = new THREE.Mesh(potLidGeometry, potLidMaterials);
+this._scene.add(potLidCube);
+potLidCube.position.x=-90
+potLidCube.position.y=17
+potLidCube.position.z=225
 
 
 //Tree 1//
@@ -1420,10 +1449,34 @@ pigmouth3Cube.position.x=-90
 pigmouth3Cube.position.y=8
 pigmouth3Cube.position.z=105.5
 
-//Big Pot inside 3rd pig's house
+//Wolf
 
-//Chimney on 3rd house
+//body
+let wolfBodyGeometry = new THREE.BoxBufferGeometry(11,15,8)
+let wolfBodyMaterials = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/backgroundTexture.jpg'), side: THREE.DoubleSide});
+let wolfBodyCube = new THREE.Mesh(wolfBodyGeometry, wolfBodyMaterials);
+this._scene.add(wolfBodyCube);
+wolfBodyCube.position.x=110
+wolfBodyCube.position.y=17
+wolfBodyCube.position.z=25
 
+//Left leg
+let wolfL1Geometry = new THREE.BoxBufferGeometry(3.5,7,3.5)
+let wolfL1Materials = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/backgroundTexture.jpg'), side: THREE.DoubleSide});
+let wolfL1Cube = new THREE.Mesh(wolfL1Geometry, wolfL1Materials);
+this._scene.add(wolfL1Cube);
+wolfL1Cube.position.x=113
+wolfL1Cube.position.y=8
+wolfL1Cube.position.z=25
+
+//Right leg
+let wolfL2Geometry = new THREE.BoxBufferGeometry(3.5,7,3.5)
+let wolfL2Materials = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/backgroundTexture.jpg'), side: THREE.DoubleSide});
+let wolfL2Cube = new THREE.Mesh(wolfL2Geometry, wolfL2Materials);
+this._scene.add(wolfL2Cube);
+wolfL2Cube.position.x=107
+wolfL2Cube.position.y=8
+wolfL2Cube.position.z=25
 
 //end here((1))
 
