@@ -39,7 +39,7 @@ class BasicCharacterController {
   _LoadModels() {
     const loader = new FBXLoader();
     //add character here
-    loader.setPath('./resources/zombie/');
+    loader.setPath('');
     loader.load('breathidle.fbx', (fbx) => {
       fbx.scale.setScalar(0.1);
       fbx.traverse(c => {
@@ -1375,6 +1375,139 @@ this._scene.add(pigmouth4Cube);
 pigmouth4Cube.position.x=50
 pigmouth4Cube.position.y=8
 pigmouth4Cube.position.z=101
+
+//Wolf
+//body
+let wolfBodyGeometry = new THREE.BoxBufferGeometry(11,15,8)
+let wolfBodyMaterials = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/backgroundTexture.jpg'), side: THREE.DoubleSide});
+let wolfBodyCube = new THREE.Mesh(wolfBodyGeometry, wolfBodyMaterials);
+this._scene.add(wolfBodyCube);
+wolfBodyCube.position.x=110
+wolfBodyCube.position.y=17
+wolfBodyCube.position.z=25
+
+//Left leg
+let wolfL1Geometry = new THREE.BoxBufferGeometry(3.5,7,3.5)
+let wolfL1Materials = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/backgroundTexture.jpg'), side: THREE.DoubleSide});
+let wolfL1Cube = new THREE.Mesh(wolfL1Geometry, wolfL1Materials);
+this._scene.add(wolfL1Cube);
+wolfL1Cube.position.x=113
+wolfL1Cube.position.y=8
+wolfL1Cube.position.z=25
+
+//Right leg
+let wolfL2Geometry = new THREE.BoxBufferGeometry(3.5,7,3.5)
+let wolfL2Materials = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/backgroundTexture.jpg'), side: THREE.DoubleSide});
+let wolfL2Cube = new THREE.Mesh(wolfL2Geometry, wolfL2Materials);
+this._scene.add(wolfL2Cube);
+wolfL2Cube.position.x=107
+wolfL2Cube.position.y=8
+wolfL2Cube.position.z=25
+
+
+
+//////Wolf///////
+//head
+let wolfHeadGeo = new THREE.BoxBufferGeometry(5,8,5)
+let wolfHeadMat = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/backgroundTexture.jpg'), side: THREE.DoubleSide});
+let wolfHeadCube = new THREE.Mesh(wolfHeadGeo, wolfHeadMat);
+this._scene.add(wolfHeadCube);
+wolfHeadCube.position.x = 30
+wolfHeadCube.position.y = 23
+wolfHeadCube.position.z = 25
+
+//Mouth
+let wolfMouthGeo = new THREE.BoxBufferGeometry(5,3,5)
+let wolfMouthMat = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/backgroundTexture.jpg'), side: THREE.DoubleSide});
+let wolfMouthCube = new THREE.Mesh(wolfMouthGeo, wolfMouthMat);
+this._scene.add(wolfMouthCube);
+wolfMouthCube.position.x = 30
+wolfMouthCube.position.y = 23
+wolfMouthCube.position.z = 28
+//Ear Right
+let wolfearRGeo = new THREE.CylinderGeometry(0.10,1.1 , 5, 32, 64);
+let wolfearRMat = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/backgroundTexture.jpg'), side: THREE.DoubleSide});
+let wolfearMesh = new THREE.Mesh(wolfearRGeo, wolfearRMat);
+this._scene.add(wolfearMesh);
+
+wolfearMesh.position.x = 29
+wolfearMesh.position.y = 29
+wolfearMesh.position.z = 25
+
+//Ear Left
+let wolfearLGeo = new THREE.CylinderGeometry(0.10,1.1 , 5, 32, 64);
+let wolfearLMat = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/backgroundTexture.jpg'), side: THREE.DoubleSide});
+let wolfearLMesh = new THREE.Mesh(wolfearLGeo, wolfearLMat);
+this._scene.add(wolfearLMesh);
+
+wolfearLMesh.position.x = 31
+wolfearLMesh.position.y = 29
+wolfearLMesh.position.z = 25
+
+//Left Eye
+let wolfLGeo = new THREE.SphereGeometry(0.5, 20, 20);
+let wolfLMat = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/wolfeyes.jpg'), side: THREE.DoubleSide});
+let wolfLMesh = new THREE.Mesh(wolfLGeo, wolfLMat);
+this._scene.add(wolfLMesh);
+
+wolfLMesh.position.x = 31
+wolfLMesh.position.y = 26
+wolfLMesh.position.z = 28
+
+//Right Eye
+let wolfRGeo = new THREE.SphereGeometry(0.5, 20, 20);
+let wolfRMat = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/wolfeyes.jpg'), side: THREE.DoubleSide});
+let wolfRMesh = new THREE.Mesh(wolfRGeo, wolfRMat);
+this._scene.add(wolfRMesh);
+
+wolfRMesh.position.x = 29
+wolfRMesh.position.y = 26
+wolfRMesh.position.z = 28
+
+//body
+let wolfBodyGeometry = new THREE.BoxBufferGeometry(11,15,8)
+let wolfBodyMaterials = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/backgroundTexture.jpg'), side: THREE.DoubleSide});
+let wolfBodyCube = new THREE.Mesh(wolfBodyGeometry, wolfBodyMaterials);
+this._scene.add(wolfBodyCube);
+wolfBodyCube.position.x=30
+wolfBodyCube.position.y=13
+wolfBodyCube.position.z=25
+
+//Right Arm
+let armRGeo = new THREE.BoxBufferGeometry(6,11,4)
+let armRMat = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/backgroundTexture.jpg'), side: THREE.DoubleSide});
+let armRCube = new THREE.Mesh(armRGeo, armRMat);
+this._scene.add(armRCube);
+armRCube.position.x=24
+armRCube.position.y=16
+armRCube.position.z=25
+
+//Left Arm
+let armLGeo = new THREE.BoxBufferGeometry(6,11,4)
+let armLMat = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/backgroundTexture.jpg'), side: THREE.DoubleSide});
+let armLCube = new THREE.Mesh(armLGeo, armLMat);
+this._scene.add(armLCube);
+armLCube.position.x=36
+armLCube.position.y=16
+armLCube.position.z=25
+
+//Left leg
+let wolfL1Geometry = new THREE.BoxBufferGeometry(3.5,7,3.5)
+let wolfL1Materials = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/backgroundTexture.jpg'), side: THREE.DoubleSide});
+let wolfL1Cube = new THREE.Mesh(wolfL1Geometry, wolfL1Materials);
+this._scene.add(wolfL1Cube);
+wolfL1Cube.position.x=33
+wolfL1Cube.position.y=4
+wolfL1Cube.position.z=25
+
+//Right leg
+let wolfL2Geometry = new THREE.BoxBufferGeometry(3.5,7,3.5)
+let wolfL2Materials = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load('images/backgroundTexture.jpg'), side: THREE.DoubleSide});
+let wolfL2Cube = new THREE.Mesh(wolfL2Geometry, wolfL2Materials);
+this._scene.add(wolfL2Cube);
+wolfL2Cube.position.x=27
+wolfL2Cube.position.y=4
+wolfL2Cube.position.z=25
 
 //end here((1))
 
